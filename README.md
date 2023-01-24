@@ -51,11 +51,14 @@ Math magicians is a web application that is use for calculations.
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
+- ADD and Subtract
+- Multiply
+- Divide
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
+- More operations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
