@@ -1,32 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Keys from './keys';
+import calculate from '../logic/calculator';
 
-class Cal extends React.PureComponent {
-  render() {
-    return (
-      <div className="calDisplay">
-        <div className="result">0</div>
-        <div className="oprt gry">AC</div>
-        <div className="oprt gry">&#43;/&minus;</div>
-        <div className="oprt gry">%</div>
-        <div className="oprt op">&divide;</div>
-        <div className="digit gry">7</div>
-        <div className="digit gry">8</div>
-        <div className="digit gry">9</div>
-        <div className="digit op">&times;</div>
-        <div className="digit gry">4</div>
-        <div className="digit gry">5</div>
-        <div className="digit gry">6</div>
-        <div className="digit op">-</div>
-        <div className="digit gry">1</div>
-        <div className="digit gry">2</div>
-        <div className="digit gry">3</div>
-        <div className="digit op">+</div>
-        <div className="digit span gry">0</div>
-        <div className="digit gry">.</div>
-        <div className="digit gry">=</div>
-      </div>
-    );
+const Cal = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
+
+  const handleEvent = (e) => {
+    const oprObject = calculate(state, e.target.textContent);
+    setState(oprObject);
+  };
+
+  const { total, operation, next } = state;
+  const oprnd = operation === '%' ? 'mod' : operation;
+  let result = '';
+  if (total) {
+    result = `${total} ${oprnd || ''} ${next || ''}`;
+  } else if (next) {
+    result = `${next} ${oprnd || ''}`;
   }
-}
+  return (
+    <div className="calDisplay">
 
+      <div className="result">{result || 0 }</div>
+      <Keys styles="oprt gry" handleEvent={(e) => handleEvent(e)} value="AC" />
+      <Keys styles="oprt gry" handleEvent={(e) => handleEvent(e)} value="+/-" />
+      <Keys styles="oprt gry" handleEvent={(e) => handleEvent(e)} value="%" />
+      <Keys styles="oprt op" handleEvent={(e) => handleEvent(e)} value="÷" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="7" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="8" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="9" />
+      <Keys styles="digit op" handleEvent={(e) => handleEvent(e)} value="x" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="4" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="5" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="6" />
+      <Keys styles="digit op" handleEvent={(e) => handleEvent(e)} value="-" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="1" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="2" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="3" />
+      <Keys styles="digit op" handleEvent={(e) => handleEvent(e)} value="+" />
+      <Keys styles="digit span gry" handleEvent={(e) => handleEvent(e)} value="0" />
+      <Keys styles="digit gry" handleEvent={(e) => handleEvent(e)} value="." />
+      <Keys styles="digit op" handleEvent={(e) => handleEvent(e)} value="=" />
+    </div>
+  );
+};
 export default Cal;
