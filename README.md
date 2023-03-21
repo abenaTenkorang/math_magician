@@ -29,6 +29,12 @@
 
 In this project, I am using React to create a calculator app.
 
+ ## Browser Display
+ 
+https://user-images.githubusercontent.com/109290913/226741468-12246695-7f59-40b6-aefc-dd60e95bbc77.mp4
+
+
+
 ## 🛠 Built With <a name="built-with"></a>
 
 <!-- Tech Stack -->
@@ -40,7 +46,7 @@ In this project, I am using React to create a calculator app.
 
 ### Key Features <a name="key-features"></a>
 
-- Routing between pages on the Client Side.
+- Fetch API data for quotes.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -48,6 +54,7 @@ In this project, I am using React to create a calculator app.
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo Link]( https://dev--zippy-yeot-d128f8.netlify.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
