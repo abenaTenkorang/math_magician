@@ -14,7 +14,7 @@ function Quotes() {
       'https://api.api-ninjas.com/v1/quotes',
       {
         headers: {
-          'X-Api-Key': 'NYVlpqmjS8Utj+gWFZkDWg==zrsETYojZfgkROC5',
+          'X-Api-Key': 'wYepI3uwxej9CnQYOZLR8bLI0MclShYFdjAbttfI',
         },
       },
     )
