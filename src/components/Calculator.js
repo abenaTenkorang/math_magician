@@ -6,7 +6,7 @@ class Cal extends React.PureComponent {
       <div className="calDisplay">
         <div className="result">0</div>
         <div className="oprt gry">AC</div>
-        <div className="oprd gry">&#43;/&minus;</div>
+        <div className="oprt gry">&#43;/&minus;</div>
         <div className="oprt gry">%</div>
         <div className="oprt op">&divide;</div>
         <div className="digit gry">7</div>
