@@ -30,8 +30,12 @@
 In this project, I am using React to create a calculator app.
 
  ## Browser Display
+
+
+https://user-images.githubusercontent.com/109290913/228199811-0f7dddd3-dba4-4db0-9886-7dee0cfccd68.mp4
+
  
-https://user-images.githubusercontent.com/109290913/226741468-12246695-7f59-40b6-aefc-dd60e95bbc77.mp4
+
 
 
 
@@ -54,7 +58,7 @@ https://user-images.githubusercontent.com/109290913/226741468-12246695-7f59-40b6
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link]( https://dev--zippy-yeot-d128f8.netlify.app/)
+- [Live Demo Link](https://deploy-preview-6--zippy-yeot-d128f8.netlify.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
