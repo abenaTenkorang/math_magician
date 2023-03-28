@@ -1,23 +1,25 @@
 import React from 'react';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Quotes from './components/Quotes';
 import Cal from './components/Calculator';
 
 import Footer from './components/Footer';
-import NavBar from './components/NavBar';
+import Home from './components/Home';
 
 class App extends React.PureComponent {
   render() {
     return (
       <>
-        <div className="home">
-          <NavBar />
-          <div className="App">
-            <Quotes />
-            <Cal />
-          </div>
-          <Footer />
+
+        <div className="app">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="calculator" element={<Cal />} />
+            <Route path="Quotes" element={<Quotes />} />
+          </Routes>
         </div>
+        <Footer />
       </>
     );
   }
