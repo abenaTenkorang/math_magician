@@ -58,7 +58,7 @@ https://user-images.githubusercontent.com/109290913/228199811-0f7dddd3-dba4-4db0
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://deploy-preview-6--zippy-yeot-d128f8.netlify.app/)
+- [Live Demo Link](https://math-magician-m7zb.onrender.com/Quotes)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
