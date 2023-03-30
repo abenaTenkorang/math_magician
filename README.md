@@ -29,15 +29,6 @@
 
 In this project, I am using React to create a calculator app.
 
- ## Browser Display
-
-
-https://user-images.githubusercontent.com/109290913/228199811-0f7dddd3-dba4-4db0-9886-7dee0cfccd68.mp4
-
- 
-
-
-
 
 ## 🛠 Built With <a name="built-with"></a>
 
