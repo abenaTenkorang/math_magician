@@ -6,19 +6,20 @@ import Cal from './components/Calculator';
 
 import Footer from './components/Footer';
 import Home from './components/Home';
+import NavBar from './components/NavBar';
 
 class App extends React.PureComponent {
   render() {
     return (
       <>
-
-        <div className="app">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="calculator" element={<Cal />} />
-            <Route path="Quotes" element={<Quotes />} />
-          </Routes>
-        </div>
+        <NavBar />
+        {/* <div className="app"> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="calculator" element={<Cal />} />
+          <Route path="Quotes" element={<Quotes />} />
+        </Routes>
+        {/* </div> */}
         <Footer />
       </>
     );
