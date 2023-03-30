@@ -58,7 +58,7 @@ https://user-images.githubusercontent.com/109290913/228199811-0f7dddd3-dba4-4db0
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://math-magician-m7zb.onrender.com/Quotes)
+- [Live Demo Link](https://math-magician-m7zb.onrender.com)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
