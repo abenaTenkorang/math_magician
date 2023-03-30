@@ -13,13 +13,13 @@ class App extends React.PureComponent {
     return (
       <>
         <NavBar />
-        {/* <div className="app"> */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="calculator" element={<Cal />} />
-          <Route path="Quotes" element={<Quotes />} />
-        </Routes>
-        {/* </div> */}
+        <div className="app">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="calculator" element={<Cal />} />
+            <Route path="Quotes" element={<Quotes />} />
+          </Routes>
+        </div>
         <Footer />
       </>
     );
