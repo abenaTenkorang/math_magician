@@ -7,35 +7,39 @@ function Quotes() {
   const [category, setCategory] = useState('');
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  const fetchQuotes = async () => {
+    try {
+      const res = await fetch(
+        'https://api.api-ninjas.com/v1/quotes',
+        {
+          headers: {
+            'X-Api-Key': 'wYepI3uwxej9CnQYOZLR8bLI0MclShYFdjAbttfI',
+          },
+        },
+      );
+
+      const data = await res.json();
+      setError(null);
+      setQuote(data[0].quote);
+      setAuthor(data[0].author);
+      setCategory(data[0].category);
+      setError(null);
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      setError(error.message);
+    }
+  };
 
   useEffect(() => {
     setLoading(true);
-    fetch(
-      'https://api.api-ninjas.com/v1/quotes',
-      {
-        headers: {
-          'X-Api-Key': 'wYepI3uwxej9CnQYOZLR8bLI0MclShYFdjAbttfI',
-        },
-      },
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setError(null);
-        setQuote(data[0].quote);
-        setAuthor(data[0].author);
-        setCategory(data[0].category);
-        setError(null);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setLoading(false);
-        setError(error.message);
-      });
+    fetchQuotes();
   }, []);
 
   return (
-    <div className="quotes">
-      {
+    <div className="quotes-container">
+      <div className="quotes">
+        {
         loading || error ? (
           <div className={loading ? 'loading' : 'error'}>
             {loading ? <div className="loader" /> : `Error: ${error}` }
@@ -55,6 +59,7 @@ function Quotes() {
           </>
         )
       }
+      </div>
     </div>
   );
 }

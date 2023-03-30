@@ -25,7 +25,6 @@ const Cal = () => {
   }
   return (
     <div className="calDisplay">
-
       <div className="result">{result || 0 }</div>
       <Keys styles="oprt gry" handleEvent={(e) => handleEvent(e)} value="AC" />
       <Keys styles="oprt gry" handleEvent={(e) => handleEvent(e)} value="+/-" />
