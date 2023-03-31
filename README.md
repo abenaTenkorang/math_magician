@@ -27,7 +27,7 @@
 
 # 🧮 Math Magicans
 
-In this project, I am using React to create a calculator app.
+Math magicians enables users to perform basic and advanced mathematical operations with precision. The user-friendly interface, powered by React {state, props}/hooks, allows for easy customization and effortless clearing of calculations. This innovative app is the ultimate tool for students, educators, and professionals seeking accuracy and convenience in their mathematical calculations.
 
 
 ## 🛠 Built With <a name="built-with"></a>
